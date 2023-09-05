@@ -1,3 +1,3 @@
 import axios from 'axios';
 
-export default axios.create({ baseURL: 'https://erpjariomilitar.com' });
+export default axios.create({ baseURL: 'http://erpjariomilitar.com' });
