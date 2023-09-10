@@ -5,7 +5,6 @@ import './App.css';
 import Form from './request/Form.js';
 
 function App() {
-
   useEffect(() => {
     // api.get('/product/id/3').then(res => console.log('GET', res.data));
     // api.post('/product/filter', { code: 3 }).then(res => console.log('POST', res.data));

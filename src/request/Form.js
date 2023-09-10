@@ -23,14 +23,23 @@ function SimpleForm() {
     e.preventDefault();
     console.log(e.target.url.value);
 
-    let config = {
-      method: e.target.method.value,
-      data: {
-        code: 10
-      }
-    }
+    // const options = {
+    //   headers: { "content-type": "application/json" }
+    // }
 
-    Api(e.target.url.value, config)
+    // let config = {
+    //   data: {
+    //     code: 10
+    //   }
+    // }
+
+    const data = JSON.stringify({ code: 10 });
+    const options = {
+      method: e.target.method.value,
+      headers: { "content-type": "application/json" }
+    };
+
+    Api(e.target.url.value, data, options)
       .then(res => console.log(res.data))
       .catch(error => console.error('Error:', error));
   };
