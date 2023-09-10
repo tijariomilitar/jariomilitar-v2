@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export default axios.create({ baseURL: 'https://seahorse-app-zkkes.ondigitalocean.app/' });
+export default axios.create({ baseURL: 'https://erpjariomilitar.com/' });
 
 // export default {
 //   verifyResponse(res) {
