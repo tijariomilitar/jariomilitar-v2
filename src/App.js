@@ -1,33 +1,28 @@
 import React, { useEffect } from 'react';
 
-import logo from './logo.svg';
 import './App.css';
 
-import api from './Api.js';
+import Form from './request/Form.js';
 
 function App() {
 
   useEffect(() => {
-    api.post('/product/filter', { code: 3 }).then(res => console.log(res.data));
+    // api.get('/product/id/3').then(res => console.log('GET', res.data));
+    // api.post('/product/filter', { code: 3 }).then(res => console.log('POST', res.data));
   });
 
+  // async function request(url, method, data) {
+  //   if (method === "GET") {
+  //     api.get(url).then(res => console.log('GET', res.data));
+  //   }
+
+  //   if (method === "GET") {
+  //     api.post(url, data).then(res => console.log('GET', res.data));
+  //   }
+  // };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Form></Form>
   );
 }
 
