@@ -8,11 +8,7 @@ import api from './Api.js';
 function App() {
 
   useEffect(() => {
-    let product = {
-      code: '3'
-    };
-
-    api.post('/product/filter', product).then(res => console.log(res.data));
+    api.get('/product/id/1').then(res => console.log(res.data));
   });
 
   return (
