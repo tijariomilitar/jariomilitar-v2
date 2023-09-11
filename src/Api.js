@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-export default axios.create({ baseURL: 'https://erpjariomilitar.com/' });
+export default axios.create({ baseURL: 'https://cotalogo-api.netlify.app/' });
+// export default axios.create({ baseURL: 'https://erpjariomilitar.com/' });
 
 // export default {
 //   verifyResponse(res) {
